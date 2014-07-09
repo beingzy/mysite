@@ -11,5 +11,5 @@ Some features the project shots for:
 ** Development Ideas **
 *** About .css ***
 * The main stylesheet pasted from Flask.org
-* <code> tag pasted from bootstrap3
+* <\'code\'> tag pasted from bootstrap3
 
