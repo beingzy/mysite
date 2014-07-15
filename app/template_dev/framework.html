@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Yi Zhang | a voyager in flows</title>
+<meta charset="utf-8">
+<link rel=stylesheet type=text/css href="assets/flask/style.css">
+<link rel=stylesheet type=text/css href="assets/flask/bootstrap_code_pre.css">
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+<script type=text/javascript src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>	
+<style type=text/css>
+	h1 {margin: 0 0 30px 0; background: url(assets/images/starry_night_white_black.png) no-repeat center; width: 995px; height: 500px}
+	h1 span, p.tagline { display: none; }
+</style>
+<script type=text/javascript>
+	$(function() {
+		$('h1').bind('mousedown contextmenu', function(event) {
+			if (event.button != 2)
+				return;
+			var box = $('div.logohint');
+			if (!box.is(':visible'))
+				box.animate({'height':'show', 'opacity':'show'}, 100);
+			event.preventDefault();
+			event.returnValue = false;
+			return false;
+		});
+	});
+</script>
+
+<div class="box">
+	<h1><span>Welcome to Yi Zhang's website</span></h1>
+	
+	<p class=tagline>Because sometimes, to get exposed to the world is benefiting many
+		<div class=logohint style="display: none">
+			<p>Are you sure that it is a good idea to explore the world with partners ? Life should be hacked by your encouragement and loneliness.</p>
+		</div>
+	</p>
+	<br>
+<!-- navigation -->
+	<p class="nav nav-right" style="float:center">
+		<a href="/">Home</a> //
+		<a href="/blogs/">Blogs</a> //
+		<a href="/Tools/">Tools</a> //
+		<a href="/aboutme/">About me</a>
+	<br>
+
+	<p>Hello, Welcome to Yi Zhang's personal website. I will post the articles on things of my interest on random basis.
+		Besides to share ideas, I will make some of tools I which developed over the course of my life to anyone who happen
+		to find me here. 
+
+<!-- footer -->
+	<p class=footer> &copy; Copyright 2014 by <a href=http://linkedin.com/in/beingzy>Yi Zhang</a>
+</div>
+<body>
+	<div style="float:center">
+		<img src="assets/images/starry_night_white_black.png" width="995" height="500" style="float:center">
+	</div>
+</body>
+
+</html>
