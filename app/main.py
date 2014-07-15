@@ -20,6 +20,11 @@ app.config.update(dict(
 	PASSWORD='default'
 	))
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
+
+## Experiment variables
+## messages    = []
+## massages[0] = {'title':'title01', 'body':'random words set 01'}
+## massages[1] = {'title':'title02', 'body':'random words set 02'}
       
 ## #############
 ## Website 
@@ -46,9 +51,9 @@ def aboutme():
 @app.route('/error/')
 @app.errorhandler(404)
 def error_page():
-	resp = make_response(render_template('error.html'), 404)
-	resp.headers['X-Somthing'] = "Error: 404"
-	return resp
+	##resp = make_response(render_template('error.html'), 404)
+	##resp.headers['X-Somthing'] = "Error: 404"
+	return render_template('error.html')
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0', port=8000)
