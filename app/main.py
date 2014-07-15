@@ -4,7 +4,7 @@
 ##                                                      ##  
 ## Author: Yi Zhang                                     ##  
 ## Email:beingzy@gmail.com                              ##
-## Date: Jul/7/2014 (create date)                       ##  
+## Date: Jul/14/2014 (update date)                       ##  
 ## #################################################### ##
 import os
 from flask import Flask, url_for, render_template, request, g, jsonify, abort, redirect, url_for, escape, session
@@ -19,6 +19,7 @@ app.config.update(dict(
 	USERNAME='admin',
 	PASSWORD='default'
 	))
+app.config.from_envvar('FLASKR_SETTINGS', silent=True)
       
 ## #############
 ## Website 
