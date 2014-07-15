@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Yi Zhang | a voyager in flows</title>
+<head>
+<meta charset="utf-8">
+<link rel=stylesheet 	  href="{{ url_for('static', filename='flask/style.css') }}"                type="text/css" > 
+<link rel=stylesheet      href="{{ url_for('static', filename='flask/bootstrap_code_pre.css') }}"   type="text/css" >
+<link rel=stylesheet      href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" type="text/css" >
+<link rel=stylesheet      href="{{ url_for('static', filename='cover.css') }}"                      type="text/css" >
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
+</head>
+<body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          {% block head %}
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">BeingZY</h3>
+              <ul class="nav masthead-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li>//</li>
+                <li><a href="#">Blogs</a></li>
+                <li>//</li>
+                <li><a href="#">Tools</a></li>
+              </ul>
+            </div>
+          </div>
+          {% endblock %}
+
+          {% block body %}
+          
+          {% endblock %}
+
+          {% block footer %}
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Personal website owned and managed by <a href="http://www.linkedin.com/in/beingzy/">Yi Zhang</a>.</p>
+            </div>
+          </div>
+          {% endblock %}
+        </div>
+
+      </div>
+
+    </div>
+
+
+</body>
+</html>
