@@ -1,7 +1,12 @@
 {% extends "layout.html" %}
 {% block body %}
-<div>
-<h3>Title 01</h3>
-<p>Message goes here...</p>
+<h2>My Blogs:</h2>
+{% for blog in blogs %}
+<div class="blog_mini">
+<h4>{{ blog.title }}</h4>
+<i>{{ blog.created }}</i><br>
+<i><p>{{ blog.author }}<p></i>
+<p>{{ blog.body }}</p>
 </div>
+{% endfor %}
 {% endblock %}

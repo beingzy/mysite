@@ -3,7 +3,7 @@
 <title>Yi Zhang | a voyager in flows</title>
 <head>
 <meta charset="utf-8">
-<link rel=stylesheet 	  href="{{ url_for('static', filename='flask/style.css') }}"                type="text/css" > 
+<link rel=stylesheet 	    href="{{ url_for('static', filename='flask/style.css') }}"                type="text/css" > 
 <link rel=stylesheet      href="{{ url_for('static', filename='flask/bootstrap_code_pre.css') }}"   type="text/css" >
 <link rel=stylesheet      href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" type="text/css" >
 <link rel=stylesheet      href="{{ url_for('static', filename='cover.css') }}"                      type="text/css" >
@@ -19,13 +19,13 @@
           {% block head %}
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">BeingZY</h3>
+              <h4 class="masthead-brand">BeingZY</h4>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li>//</li>
-                <li><a href="#">Blogs</a></li>
-                <li>//</li>
-                <li><a href="#">Tools</a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                //
+                <li><a href="{{ url_for('blogs') }}">Blogs</a></li>
+                //
+                <li><a href="{{ url_for('aboutme') }}">About Me</a></li>
               </ul>
             </div>
           </div>

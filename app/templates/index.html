@@ -1,54 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Yi Zhang | a voyager in flows</title>
-<head>
-<meta charset="utf-8">
-<link rel=stylesheet 	  href="{{ url_for('static', filename='flask/style.css') }}"                type="text/css" > 
-<link rel=stylesheet      href="{{ url_for('static', filename='flask/bootstrap_code_pre.css') }}"   type="text/css" >
-<link rel=stylesheet      href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css')}}" type="text/css" >
-<link rel=stylesheet      href="{{ url_for('static', filename='cover.css') }}"                      type="text/css" >
-<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
-</head>
-<body>
-
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">BeingZY</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="*">Home</a></li>
-                <li>//</li>
-                <li><a href="{{ url_for('blogs') }}">Blogs</a></li>
-                <li>//</li>
-                <li><a href="{{ url_for('error') }}">Tools</a></li>
-              </ul>
-            </div>
-          </div>
-
+{% extends "layout.html" %}
+{% block body %}
           <div class="inner cover">
             <h1 class="cover-heading">Be brave to follow my heart !</h1>
-            <p class="lead">God granted me with a sharp instinction. It is my mission to utilize it at the full rate.</p>
+            <p class="lead">Maybe, an individual life journey is consisted of various forms of physical lives and those less tangible transitions between them. We move from one form to the next, with mission of aggregating our knowledge about THE Rule. To proceed forward, we have to explore, suffer and enjoy. Most importantly, we must learn to pause in order to consolidate the collected information and enlighten the path.</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-default">Unlock</a>
             </p>
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Personal website owned and managed by <a href="http://www.linkedin.com/in/beingzy/">Yi Zhang</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-</body>
-</html>
+{% endblock %}
