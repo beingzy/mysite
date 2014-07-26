@@ -21,8 +21,10 @@
 #     MONGO_HOST = '54.88.134.182'
 
 class Config(object):
-    DEBUG = False
+    DEBUG   = False
     TESTING = False
+    HOST    = '0.0.0.0'
+    PORT    = 8000
     MONGODB_SETTINGS = {
     'DB': "beingzy_site", 
     'HOST': '0.0.0.0',
