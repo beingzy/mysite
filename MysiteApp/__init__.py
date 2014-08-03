@@ -9,11 +9,8 @@
 import os
 import datetime
 from flask import Flask, url_for, render_template, request, g, jsonify, abort, redirect, url_for, escape, session
-#from flask.ext.mongoengine import MongoEngine
 from mongoengine import *
-# Import configuration (Config/ProdConfig/DevConfig/TestConfig)
 import config
-# Import MongoDB Models/Schema
 from models import *
 
 app = Flask(__name__)
