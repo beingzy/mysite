@@ -2,7 +2,7 @@ class Config(object):
     DEBUG   = False
     TESTING = False
     HOST    = '0.0.0.0'
-    PORT    = 8000
+    PORT    = 80
     MONGODB_SETTINGS = {
     'DB': "beingzy_site", 
     'HOST': '0.0.0.0',
