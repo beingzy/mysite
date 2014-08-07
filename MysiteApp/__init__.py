@@ -14,7 +14,7 @@ import config
 from models import *
 
 app = Flask(__name__)
-app.config.from_object('config.DevConfig')
+app.config.from_object('config.ProdConfig')
 
 connect(app.config['MONGODB_SETTINGS']['DB'], 
 	host=app.config['MONGODB_SETTINGS']['HOST'], 
